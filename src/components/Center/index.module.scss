@@ -1,0 +1,46 @@
+.center {
+  overflow: hidden;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  justify-content: center;
+  align-items: center;
+
+  &.hidden {
+    pointer-events: none;
+
+    .mask {
+      background-color: rgba(0, 0, 0, 0);
+      transition: background-color 200ms ease-in 150ms;
+    }
+    .main{
+      transition: all 150ms ease-in;
+      transform: scale(0);
+    }
+  }
+
+  .mask {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 200ms ease-in;
+  }
+
+  .main {
+    background-color: #FFF;
+    width: 100vw;
+    position: absolute;
+    box-sizing: border-box;
+    transition: all 150ms ease-out 100ms;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transform: scale(1);
+    border-radius: 10px;
+  }
+}

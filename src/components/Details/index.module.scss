@@ -1,0 +1,121 @@
+.item {
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 5px 0px;
+  background-color: #efefef;
+
+  .c {
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    box-sizing: border-box;
+
+    .r {
+      width: 50vw;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 5px;
+    }
+  }
+
+  .fb {
+    height: 110px;
+
+    &.fbx {
+      height: 130px;
+    }
+  }
+
+  .itemC {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 30px 10px;
+    color: #5f5855;
+    font-size: 33px;
+    min-height: 140px;
+    background-color: #FFF;
+    margin-bottom: 10px;
+
+
+    .name {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+      white-space: nowrap;
+      font-family: Microsoft YaHei;
+
+      &.imagesBox {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .itemList {
+          flex-direction: column;
+
+          .itemItem {
+            padding: 10px 0;
+            font-size: 30px;
+            color: #111;
+            white-space: pre-wrap;
+            margin-bottom: 10px;
+            font-family: Microsoft YaHei;
+
+            .tag {
+              border-bottom: 1px solid #222;
+              font-family: Microsoft YaHei;
+              line-height: 1;
+            }
+          }
+        }
+
+        .images {
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+
+          .image {
+            width: 120px;
+            height: 120px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .desc {
+        white-space: pre-wrap;
+        width: calc(100vh - 30px);
+        font-family: Microsoft YaHei;
+      }
+
+      .nameText {
+        font-size: 36px;
+        color: #111;
+        white-space: pre-wrap;
+        font-family: Microsoft YaHei;
+
+        &.nameTextAL{
+          font-family: AL;
+        }
+
+        &.nameTextS {
+          white-space: nowrap;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+    height: 0 !important;
+    -webkit-appearance: none;
+    background: transparent;
+  }
+}

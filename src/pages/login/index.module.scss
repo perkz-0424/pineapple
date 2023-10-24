@@ -1,0 +1,143 @@
+.container {
+  box-sizing: border-box;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  padding-bottom: 90px;
+
+  .icon{
+    height: 120px;
+    width: 120px;
+    border-radius: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .ad {
+    min-height: 300px;
+  }
+
+  .button {
+    width: 537px;
+    height: 88px;
+    background: #f6a543;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    border: none;
+
+    &:after {
+      display: none;
+    }
+
+    .buttonText {
+      font-size: 42px;
+      color: #fff;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .cancelButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .text {
+      font-size: 30.5px;
+      color: #959595;
+      text-align: center;
+    }
+  }
+
+  .adviceLink {
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    line-height: 1.2;
+    margin: 15px 0 0;
+
+    .txt {
+      font-size: 31.5px;
+      color: #C61720;
+      border-bottom: solid 1px #C61720;
+      margin-left: 10px;
+    }
+  }
+
+  .policyBox {
+    box-sizing: border-box;
+    padding: 0 30px 30px;
+    margin-top: 50px;
+
+    .policy {
+      background-color: #FFF;
+      padding: 5px 10px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-size: 27px;
+      color: #aaa;
+      box-sizing: border-box;
+      white-space: nowrap;
+
+      .link {
+        color: #82bbf9;
+        white-space: nowrap;
+      }
+    }
+
+    .img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .circle {
+      box-sizing: border-box;
+      border: solid 1px #717171;
+      border-radius: 30px;
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+@keyframes icoAnimate {
+  0% {
+    transform: translateX(0px);
+  }
+  20% {
+    transform: translateX(8px);
+  }
+  80% {
+    transform: translateX(-8px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes icoAnimate {
+  0% {
+    transform: translateX(0px);
+  }
+  20% {
+    transform: translateX(8px);
+  }
+  80% {
+    transform: translateX(-8px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.policyAni {
+  animation: icoAnimate 0.2s infinite;
+  -webkit-animation: icoAnimate 0.2s infinite;
+}

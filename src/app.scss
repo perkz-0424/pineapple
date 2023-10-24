@@ -1,0 +1,41 @@
+view {
+  display: flex;
+  flex-direction: column;
+  font-family: AL;
+}
+
+text {
+  font-family: AL;
+}
+
+input {
+  font-family: AL;
+
+  &::placeholder {
+    font-family: AL;
+  }
+}
+
+textarea {
+  font-family: AL;
+
+  &::placeholder {
+    font-family: AL;
+  }
+}
+
+
+button {
+  outline: none;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: AL;
+
+  &:after {
+    display: none;
+  }
+
+  &:before {
+    display: none;
+  }
+}

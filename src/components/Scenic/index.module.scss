@@ -1,0 +1,265 @@
+.swiperItem {
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #fcfcfc;
+  position: relative;
+  padding: 0 5px;
+
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+    height: 0 !important;
+    -webkit-appearance: none;
+    background: transparent;
+  }
+
+  .line {
+    width: 100%;
+    border-bottom: 1px dotted #aaaaaa;
+    box-sizing: border-box;
+
+    &.lineMr {
+      margin-top: -20px;
+    }
+  }
+
+  .item {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .textArea {
+      width: 100%;
+      height: 180px;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 29px;
+      color: #333;
+      font-weight: bold;
+      margin: -15px 0 -5px 0;
+      border: 1px dotted #aaaaaa;
+    }
+
+    &.itemB {
+      opacity: 1;
+    }
+
+    .no {
+      position: absolute;
+      font-size: 24px;
+      justify-content: center;
+      align-items: center;
+      top: 12px;
+      left: 39.5px;
+      color: #393939;
+      font-weight: 500;
+    }
+
+    .field {
+      flex-direction: row;
+      align-items: center;
+      height: 100px;
+
+      .title {
+        color: #4c4c4c;
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .location {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    justify-content: flex-end;
+    box-sizing: border-box;
+
+    &.mr {
+      margin-top: -20px;
+      margin-bottom: -10px;
+    }
+  }
+
+  .edit {
+    height: 55px;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px dotted #aaaaaa;
+    margin-right: 10px;
+
+    &.editB {
+      height: 70px;
+    }
+
+    .unit {
+      color: #333;
+      font-weight: 500;
+      font-size: 30px;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-left: 5px;
+    }
+
+    .input {
+      flex: 1;
+      height: 100%;
+      text-align: left;
+      font-size: 30px;
+      color: #333;
+      font-weight: 400;
+
+      &.inputRight {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.placeholder {
+  color: #959595 !important;
+  font-size: 28px !important;
+  font-weight: 300 !important;
+  font-family: AL !important;
+}
+
+.arr {
+
+  &:after {
+    display: block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-top: 4px solid #959595;
+    border-right: 4px solid #959595;
+    box-sizing: border-box;
+    transform: rotate(45deg) scale(0.6);
+  }
+}
+
+.red{
+  color: #db4f4f;
+}
+
+.row {
+  flex-direction: row;
+  align-items: center;
+
+  &.rowP {
+    flex-wrap: wrap;
+  }
+
+  &.rowS {
+    margin-top: -10px;
+  }
+
+  &.rowLine {
+    border-bottom: 1px dotted #aaaaaa;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px 0;
+  }
+}
+
+.txt {
+  color: #333;
+  font-size: 33px;
+}
+
+.txtSm {
+  color: #333;
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+.bottom {
+  height: 150px;
+}
+
+.add {
+  flex-direction: row;
+  align-items: center;
+  width: 120px;
+  box-sizing: border-box;
+  justify-content: center;
+  color: #959595;
+  font-size: 28px;
+  font-weight: 400;
+  border: 1px dotted #aaa;
+  background-color: #FFF;
+  height: 120px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  &.add2 {
+    height: 60px;
+    width: auto;
+    min-width: 120px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.imageBox {
+  width: 120px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  border: 1px dotted #aaa;
+  box-sizing: border-box;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+
+  &.imageBox2 {
+    height: 60px;
+    width: auto;
+    min-width: 120px;
+    padding: 0 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #3b3b3b;
+
+    .foodIcon {
+      margin-right: 10px;
+    }
+  }
+
+  .del {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+  }
+
+  .box {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+  }
+
+  .image {
+    width: 120px;
+    height: 120px;
+  }
+}

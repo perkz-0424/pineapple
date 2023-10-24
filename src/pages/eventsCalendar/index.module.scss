@@ -1,0 +1,183 @@
+.container {
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  background: #FFF;
+  min-height: 100vh;
+
+  .weekP {
+    height: 80px !important;
+  }
+
+  .week {
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eeeeee;
+    border-top: 1px solid #eeeeee;
+    background-color: #f6a543;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    .weekV {
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      color: #FFF;
+    }
+  }
+
+  .calendar {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    align-items: center;
+
+    .month {
+      width: 100%;
+
+      .monthValue {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        color: #313131;
+        padding: 30px 0 20px 0;
+      }
+
+      .days {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .day {
+          height: 100px;
+          box-sizing: border-box;
+          justify-content: center;
+          align-items: center;
+          font-size: 27px;
+          color: #3b3b3b;
+          font-weight: 400;
+          flex-direction: column;
+          position: relative;
+          padding: 1px;
+
+          &:active {
+            opacity: 0.6;
+          }
+
+          .dayBox {
+            width: 100%;
+            background-color: #FFF;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding-top: 10px;
+            box-sizing: border-box;
+            transition: all 100ms ease-in;
+          }
+
+          &.activeE {
+            color: #FFF !important;
+
+            &.activeT {
+              .dayBox {
+                border-radius: 10px;
+                background-color: #f6a543;
+              }
+            }
+
+            .dayBox {
+              border-radius: 10px;
+              background-color: #6397ed;
+            }
+
+            &:after {
+              color: #FFF !important;
+            }
+
+            &:before {
+              color: #FFF;
+              display: block;
+              content: "旅";
+              position: absolute;
+              left: 10px;
+              top: 2px;
+              font-size: 22px;
+            }
+
+            .lday {
+              color: #FFF;
+            }
+          }
+
+          &.dayRest {
+            color: #db4f4f;
+
+            //&:after {
+            //  display: block;
+            //  content: "休";
+            //  position: absolute;
+            //  right: 10px;
+            //  top: 2px;
+            //  font-size: 22px;
+            //  color: #db4f4f;
+            //}
+          }
+
+          .lday {
+            font-size: 22px;
+            color: #616161;
+          }
+        }
+      }
+    }
+  }
+}
+
+.eventsList {
+  height: 100%;
+  width: 100%;
+
+  .events {
+    height: 130px;
+    width: 100%;
+    border-bottom: 0.5px solid #dedede;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 35px;
+    justify-content: space-between;
+    color: #111111;
+
+    &.eventsY {
+      background-color: #f6a543;
+      color: #FFF;
+      border-bottom: 0.5px solid #f6a543;
+
+      &:after {
+        border-top: 6px solid #FFF;
+        border-right: 6px solid #FFF;
+      }
+    }
+
+    &:after {
+      display: block;
+      content: "";
+      width: 30px;
+      height: 30px;
+      border-top: 6px solid #000;
+      border-right: 6px solid #000;
+      box-sizing: border-box;
+      transform: rotate(45deg) scale(0.6);
+    }
+
+  }
+}

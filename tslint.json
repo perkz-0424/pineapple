@@ -1,0 +1,23 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "jsRules": {},
+  "rules": {
+    "interface-name": false,
+    "semicolon": true,
+    "quotemark": [true, "single", "jsx-double"],
+    "no-console": false,
+    "no-empty": false,
+    "no-empty-interface": false,
+    "max-classes-per-file": false,
+    "no-unused-variable": true,
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "never"
+      }
+    ]
+  },
+  "rulesDirectory": []
+}

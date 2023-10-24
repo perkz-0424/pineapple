@@ -1,0 +1,52 @@
+.bottom {
+  overflow: hidden;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+
+  &.hidden {
+    pointer-events: none;
+    transition: pointer-events 0ms ease-in 250ms;
+
+    .mask {
+      background-color: rgba(0, 0, 0, 0);
+      transition: background-color 150ms ease-in 100ms;
+    }
+    .main{
+      transition: bottom 150ms ease-in;
+      bottom: -100vh;
+    }
+  }
+
+  .mask {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 150ms ease-in;
+  }
+
+  .main {
+    background-color: #FFF;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    transition: bottom 150ms ease-in 0ms;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding-bottom: 20px;
+
+    &.ipx {
+      padding-bottom: 50px;
+    }
+  }
+}

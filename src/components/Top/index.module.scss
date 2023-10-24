@@ -1,0 +1,73 @@
+.top {
+  overflow: hidden;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+
+  &.hidden {
+    pointer-events: none;
+
+    &.hiddenMainB {
+      .main {
+        transition: top 150ms ease-in 155ms;
+        top: -100vh;
+      }
+    }
+
+    .mask {
+      background-color: rgba(0, 0, 0, 0);
+      transition: background-color 150ms ease-in 100ms;
+    }
+
+    .main {
+      transition: top 150ms ease-in;
+      top: -100vh;
+    }
+
+    .backNode {
+      opacity: 0;
+      pointer-events: none;
+      transition: top 150ms ease-out 0ms, opacity 0ms linear 150ms;
+    }
+  }
+
+  .mask {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 150ms ease-in;
+  }
+
+  .main {
+    background-color: #FFF;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    transition: top 150ms ease-out 100ms;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+
+  .backNode {
+    position: absolute;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: top 150ms ease-out 255ms, opacity 0ms linear 255ms;
+    box-sizing: border-box;
+    left: 0;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+}

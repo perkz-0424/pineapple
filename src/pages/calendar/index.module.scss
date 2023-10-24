@@ -1,0 +1,147 @@
+.container {
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  background: #FFF;
+  min-height: 100vh;
+  padding-bottom: 80px;
+
+  .weekP {
+    height: 80px;
+  }
+
+  .week {
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eeeeee;
+    background-color: #FFF;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: nowrap;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    .weekV {
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      color: #313131;
+    }
+  }
+
+  .calendar {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    align-items: center;
+
+    .month {
+      width: 100%;
+
+      .monthValue {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        color: #313131;
+        padding: 30px 0 20px 0;
+      }
+
+      .days {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .day {
+          height: 100px;
+          box-sizing: border-box;
+          justify-content: center;
+          align-items: center;
+          font-size: 27px;
+          color: #3b3b3b;
+          font-weight: 400;
+          flex-direction: column;
+          position: relative;
+          padding: 1px;
+
+          .dayBox {
+            width: 100%;
+            background-color: #FFF;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding-top: 10px;
+            box-sizing: border-box;
+            transition: all 100ms ease-in;
+          }
+
+          &.activeS {
+            color: #FFF !important;
+
+            .dayBox {
+              border-radius: 10px;
+              background-color: #f6a543;
+            }
+
+            &:before {
+              color: #FFF;
+              display: block;
+              content: "起";
+              position: absolute;
+              left: 10px;
+              top: 2px;
+              font-size: 22px;
+            }
+
+            .lday {
+              color: #FFF;
+            }
+          }
+
+          &.activeE {
+            color: #FFF !important;
+
+            .dayBox {
+              border-radius: 10px;
+              background-color: #6397ed;
+            }
+
+            &:after {
+              color: #FFF;
+              display: block;
+              content: "止";
+              position: absolute;
+              right: 10px;
+              top: 2px;
+              font-size: 22px;
+            }
+
+            .lday {
+              color: #FFF;
+            }
+          }
+
+          &.active{
+            .dayBox {
+              border-radius: 10px;
+              background-color:  #db4f4f;
+            }
+          }
+
+          &.dayRest {
+            color: #db4f4f;
+          }
+
+          .lday {
+            font-size: 22px;
+            color: #616161;
+          }
+        }
+      }
+    }
+  }
+}

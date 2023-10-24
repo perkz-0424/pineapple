@@ -1,0 +1,87 @@
+.navbarWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+
+  .left {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    min-width: 63px;
+    padding-left: 20px;
+
+    .arr{
+      width: 35px;
+      height: 35px;
+      border-top: 6px solid #FFF;
+      border-right: 6px solid #FFF;
+      box-sizing: border-box;
+      transform: rotate(-135deg) scale(0.6);
+    }
+
+    .dvd {
+      border-left: solid 1px #B5B5B5;
+      height: 37px;
+    }
+
+    .btn {
+      font-size: 34px;
+      line-height: 1;
+      color: #313131;
+      margin-left: -5px;
+      flex-direction: row;
+      align-items: center;
+      font-weight: bold;
+
+      .icon{
+        margin-left: 10px;
+      }
+
+      &.btnW {
+        color: #FFF;
+      }
+    }
+  }
+
+  .statusBar {
+    background: transparent;
+  }
+
+  .navigatorBar {
+    flex-direction: row;
+    position: relative;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    letter-spacing: 2px;
+    font-size: 35px;
+
+    .t {
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      max-width: 280px;
+      text-overflow: ellipsis;
+      vertical-align: middle;
+
+      &.small {
+        font-size: 30px;
+        max-width: 340px;
+        margin-left: -40px;
+      }
+    }
+  }
+}

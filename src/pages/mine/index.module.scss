@@ -1,0 +1,232 @@
+.container {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding-bottom: 60px;
+  transition: all 0.3s ease-in-out;
+  background: #F0F3F7;
+
+  .line{
+    width: 100%;
+    border-bottom: 0.5px solid #e7e7e7;
+    box-sizing: border-box;
+  }
+
+  .headerBg {
+    background-image: linear-gradient(to bottom, #f6a543, #F0F3F7);
+    padding-bottom: 100px;
+
+    .top {
+      width: 100%;
+    }
+  }
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 30px 20px;
+
+    .avatarBox {
+      position: relative;
+      margin-right: 28px;
+      width: 102px;
+      height: 102px;
+      border: 1px solid #E5E5E5;
+      border-radius: 50%;
+
+      .avatar {
+        width: 102px;
+        height: 102px;
+        border-radius: 50%;
+      }
+    }
+
+    .content {
+      flex: 1;
+      justify-content: space-between;
+      overflow: hidden;
+      padding: 10px 0;
+      position: relative;
+
+      .info {
+        flex-direction: row;
+        align-items: center;
+
+        .name {
+          flex-direction: row;
+          align-items: center;
+          overflow: hidden;
+
+          &.bind {
+            height: 40px;
+            flex-direction: row;
+            align-items: flex-end;
+          }
+
+          .txt {
+            overflow: hidden;
+            font-size: 30px;
+            color: #181818;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin-right: 11px;
+            font-weight: 500;
+
+            &.txtSm {
+              font-weight: 400;
+              font-size: 25px;
+              color: #3b3b3b;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  &.ipx {
+
+  }
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 20px 0 20px;
+
+  .body {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 0 10px;
+
+    .field {
+      height: 100px;
+      width: 100%;
+      position: relative;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .input {
+        text-align: right;
+        height: 90px;
+        flex: 1;
+        font-size: 28px;
+        color: #181818;
+        font-family: Microsoft YaHei;
+      }
+
+      .placeholder {
+        font-size: 28px;
+        color: #868686;
+      }
+
+      .fieldName {
+        font-size: 28px;
+        color: #181818;
+        font-family: Microsoft YaHei;
+      }
+
+      .fieldAvatar {
+        width: 76px;
+        height: 76px;
+        margin-left: 10px;
+        background-color: #e7e7e7;
+        border-radius: 3px;
+        overflow: hidden;
+
+        .avatarImage {
+          width: 76px;
+          height: 76px;
+        }
+      }
+
+      &:after {
+        display: block;
+        content: '';
+        width: 100%;
+        position: absolute;
+        height: 1px;
+        background-color: #efefef;
+        left: 0;
+        bottom: 0;
+        transform: scaleY(0.3);
+      }
+    }
+  }
+
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 120px 10px 120px;
+    justify-content: center;
+    display: flex;
+
+
+    .btn {
+      display: block;
+      font-size: 28px;
+      padding: 0px 40px;
+      box-sizing: border-box;
+      width: 150px;
+      background-color: #f1f1f1;
+      color: #111111;
+      margin: 0 25px;
+      font-family: Microsoft YaHei;
+
+      &.btnC {
+        background-color: #F2Ca6a;
+        color: #FFF;
+      }
+
+      &.disabled {
+        opacity: 0.7;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
+    }
+  }
+
+  .company {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .companyName {
+      margin-left: 20px;
+      font-size: 27px;
+      color: #111111;
+      font-weight: 500;
+      font-family: Microsoft YaHei;
+    }
+
+    .ico {
+      border: 1px solid #efefef;
+      height: 40px;
+      width: 40px;
+      border-radius: 40px;
+    }
+  }
+
+  .tipBox {
+    margin-bottom: 5px;
+
+    .tip {
+      font-size: 29px;
+      margin-bottom: 5px;
+      color: #111111;
+      font-family: Microsoft YaHei;
+    }
+
+    .tipSm {
+      font-size: 25px;
+      color: #868686;
+      font-family: Microsoft YaHei;
+    }
+  }
+}
+
+.row {
+  flex-direction: row;
+  align-items: center;
+}

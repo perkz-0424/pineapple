@@ -1,0 +1,55 @@
+.fixed {
+  position: fixed;
+  right: 0;
+  width: 50px;
+  align-items: center;
+  z-index: 2;
+
+  .key {
+    padding: 5px 0;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 60px;
+    height: 40px;
+    position: relative;
+
+    .letter {
+      width: 28px;
+      height: 28px;
+      border-radius: 28px;
+      justify-content: center;
+      align-items: center;
+      color: #313131;
+      background-color: transparent;
+
+      &.letterActive {
+        background-color: #4383f3;
+        color: #FFF;
+      }
+    }
+  }
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 75px;
+    background: rgba(191, 191, 191, 0.7);
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    margin-top: -37.5px;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 40px;
+  }
+
+}
+
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}

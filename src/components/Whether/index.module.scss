@@ -1,0 +1,29 @@
+.main {
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+  border-bottom: 1px dotted #aaaaaa;
+  padding: 10px 0;
+
+  .item {
+    width: 94px;
+    border: 1px solid #aaa;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #333;
+    background-color: #FFF;
+    height: 50px;
+
+    &.left{
+      margin-right: 20px;
+    }
+
+    &.itemActive {
+      background-color: #4fae70;
+      color: #FFF;
+      border-color: #4fae70;
+    }
+  }
+}

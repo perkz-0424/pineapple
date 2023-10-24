@@ -1,0 +1,117 @@
+.show {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 10px 20px 10px;
+
+  .showMain {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #F0F3F7;
+
+    .body {
+      flex: 1;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      align-items: center;
+
+      .button {
+        margin-top: 10px;
+        background-color: #f6a543;
+        color: #FFF;
+        padding: 15px 50px;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        border-radius: 5px;
+        width: 100%;
+      }
+
+      .bodyName {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        font-size: 30px;
+        color: #3b3b3b;
+        margin-bottom: 30px;
+
+        .textarea{
+          border: 1px dotted #aaaaaa;
+          width: 100%;
+          height: 200px;
+          margin-top: 10px;
+          font-size: 30px;
+          color: #3b3b3b;
+        }
+
+        .boxBox {
+          width: 100%;
+
+          .sm {
+            font-size: 25px;
+            color: #868686;
+          }
+
+          .map {
+            width: 100%;
+            height: 400px;
+            margin-top: 10px;
+          }
+        }
+
+        .inputValue {
+          border-bottom: 1px dotted #aaaaaa;
+          flex: 1;
+          font-size: 30px;
+          color: #3b3b3b;
+          min-width: 200px;
+        }
+      }
+    }
+
+    .navigatorBar {
+      flex-direction: row;
+      position: relative;
+      background-color: #F0F3F7;
+
+      .left {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        min-width: 63px;
+        padding-left: 5px;
+
+        .arr{
+          width: 35px;
+          height: 35px;
+          border-top: 6px solid #5a5a5a;
+          border-right: 6px solid #5a5a5a;
+          box-sizing: border-box;
+          transform: rotate(-135deg) scale(0.6);
+          padding: 0;
+          margin-bottom: 1px;
+          margin-right: -10px;
+        }
+
+        .dvd {
+          border-left: solid 1px #B5B5B5;
+          height: 37px;
+        }
+
+        .btn {
+          font-size: 32px;
+          color: #313131;
+          flex-direction: row;
+          align-items: center;
+          margin-right: 5px;
+          line-height: 32px;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
